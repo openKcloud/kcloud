@@ -1,7 +1,59 @@
-# kcloud
-Korean semiconductor support cloud service platform
+# openKcloud (AI반도체 클라우드 플랫폼)
 
-By providing AI semiconductors as a cloud service, we lower the barrier to utilizing AI semiconductor resources required for learning and inference of very large AI models, and develop AI semiconductor cloud service platform technology that provides optimal performance and operational cost optimization when utilizing AI semiconductor clouds.
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+## 개요
 
+이 저장소는 **AI 컴퓨팅 가속기(NPU, PIM 등)** 를 클라우드 서비스로 제공하여 초거대 AI 모델의 학습 및 추론에 필요한 고비용 자원의 활용 장벽을 낮추고, 최적 성능과 운용 비용 최적화를 달성하기 위한 **AI반도체 클라우드 플랫폼** 기술 개발을 위한 프로젝트입니다.  
+본 플랫폼은 **AI반도체 as a Service** 개념을 바탕으로 클라우드의 이점을 극대화하며, 다양한 이기종 장치(CPU, GPU, NPU, PIM 등)의 결합 활용을 지원합니다.
 
+## 주요 기능
+
+프로젝트는 다음과 같은 기술 영역을 포함합니다:
+
+### 1. AI반도체 클라우드 서비스 제공 기술
+- **가상머신 서비스 기술:** AI반도체를 지원하는 가상머신 서비스 제공
+- **컨테이너 및 Kubernetes 서비스:** AI반도체 지원 컨테이너와 Kubernetes 기반 클러스터 서비스
+- **패키징 및 배포 기술:** 최적의 가상머신 및 컨테이너 패키징과 배포
+- **자원 분할 제공 기술:** 단일 AI반도체 클라우드 자원의 논리적 및 시간적 분할 제공
+- **이기종 장치 결합 활용:** CPU, GPU, NPU, PIM 등 다양한 장치의 연계 활용
+
+### 2. 오케스트레이션 및 성능 최적화 기술
+- **자원 관리 및 스케줄링:** AI반도체 자원 관리 및 인스턴스 스케줄링 기술
+- **초거대 AI모델 클러스터링:** 초거대 AI모델 특화 클러스터링 기술
+- **워크로드 격리:** 다중 사용자 환경에서 AI 서비스 간 워크로드 격리
+
+### 3. 특화 모니터링 및 트레이싱 기술
+- **모니터링 및 로깅:** AI반도체 클라우드 서비스 특화 모니터링, 로깅 및 트레이싱 기술
+- **이상징후 감시 및 알람:** 이상 징후 감시와 알람 제공
+- **사용량 분석 기반 비용 예측:** 서비스 사용량 분석을 통한 비용 예측
+- **장애 탐지 및 복구:** 가상머신 및 컨테이너 장애 탐지 및 복구 기술
+
+### 4. 운용 비용 최적화 기술
+- **자원 할당 및 스케줄링:** AI반도체 자원 할당과 워크로드 스케줄링 최적화
+- **전력 사용량 최적화:** 실시간 모니터링 기반 전력 사용량 최적화
+- **인프라 재구성:** 운용 비용 분석 기반의 컴퓨팅 인프라 재구성
+
+### 5. 관리 및 개방형 API 기술
+- **AI SW개발 환경 제공:** AI반도체 기반 개발 환경 관리 및 제공
+- **멀티테넌시 지원:** 다중 사용자간 가상머신 및 컨테이너 서비스 멀티테넌시 지원
+- **접근제어 및 인증:** 사용자 역할별 접근제어(IAM) 기술
+- **관리자/사용자 포털:** AI반도체 클라우드 특화 포털 제공
+- **개방형 API:** 3rd Party 응용 및 장치 연계를 위한 API 제공
+
+### 6. 초거대 AI모델 적용 및 최적화
+- **호환성 검증:** 초거대 AI 모델 동작 호환성 검증
+- **기능 검증:** 초거대 AI 모델을 통한 플랫폼 기능 검증
+- **최적화 기술:** 초거대 AI 모델 실행 성능 개선을 위한 최적화
+
+## 아키텍처 개요
+
+아래 개념도는 AI반도체 클라우드 플랫폼 및 최적화 기술의 전체적인 구성을 나타냅니다.
+
+![Concept Diagram](https://github.com/user-attachments/assets/a384b40d-b1d0-48f3-b373-9929eef968bb)
+
+## 기여 방법
+openKcloud 코드 개발에 기여하고자 하신다면, 패치 제출 및 기여 워크플로우에 대한 자세한 내용은 DOCUMENTATIONs를 참고해 주세요.
+
+## 라이선스
+openKcloud는 Apache 2.0 라이선스 하에 배포됩니다. 자세한 내용은 [LICENSE](./LICENSE) 파일을 참고해 주세요.
