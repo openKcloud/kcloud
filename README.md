@@ -46,11 +46,12 @@
 - **기능 검증:** 초거대 AI 모델을 통한 플랫폼 기능 검증
 - **최적화 기술:** 초거대 AI 모델 실행 성능 개선을 위한 최적화
 
+
 ## 아키텍처 개요
 
 아래 개념도는 AI반도체 클라우드 플랫폼 및 최적화 기술의 전체적인 구성을 나타냅니다.
 
-![Concept Diagram](https://github.com/user-attachments/assets/a384b40d-b1d0-48f3-b373-9929eef968bb)
+![Concept Diagram](https://github.com/user-attachments/assets/76991c15-2646-46b6-9fe7-862daa88897e)
 
 ## 기여 방법
 openKcloud 코드 개발에 기여하고자 하신다면, 패치 제출 및 기여 워크플로우에 대한 자세한 내용은 DOCUMENTATIONs를 참고해 주세요.
